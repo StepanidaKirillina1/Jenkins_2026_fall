@@ -62,7 +62,7 @@
    JENKINS_USERNAME=<username>
    JENKINS_PASSWORD=<password>
    JENKINS_HOST=localhost
-   JENKINS_PORT=8080
+   JENKINS_PORT=8081
    BROWSER_NAME=chrome
    BROWSER_OPTIONS_CHROME=--window-size=1920,1080;--lang=en-US
    ```
