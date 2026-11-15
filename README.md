@@ -1,4 +1,4 @@
-# JenkinsQA_Python_2026_fall
+# Jenkins_2026_fall
 
 Учебный проект для автоматизации браузерных тестов на **Python**, **Selenium**
 и **pytest**, в том числе для тестирования Jenkins.
