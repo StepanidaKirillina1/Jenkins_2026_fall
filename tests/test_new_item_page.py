@@ -1,14 +1,17 @@
+import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-import pytest
+from pages.home_page import HomePage
+
 
 def test_open_new_item_creation_page(browser):
+    new_item_header_text = (
+        HomePage(browser)
+        .click_new_item_link()
+        .get_new_item_header_text()
+    )
 
-    browser.find_element(By.CSS_SELECTOR, "a[href='/view/all/newJob']").click()
-    new_item_header = browser.find_element(By.CSS_SELECTOR, ".jenkins-app-bar h1")
-
-    assert "/newJob" in browser.current_url
-    assert new_item_header.text == "New Item"
+    assert new_item_header_text == "New Item"
 
 def test_ok_button_disabled_when_name_is_blank(browser):
 
